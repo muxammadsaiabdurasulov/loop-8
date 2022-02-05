@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: #F8EBE9;
+}
+
+.container {
+    background: url('images/background.jpg') #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    box-shadow: 0 20px 30px rgba(213, 161, 146, 0.9);
+    padding: 0 33px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.list-item {
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    top: 0.1em;
+    margin-left: 1.55em;
+    color: #444;
+    opacity: .6;
+    font-weight: 600;
+}
+
+.nav-link::before {
+    content: url('images/arrow-back.svg');
+    position: absolute;
+    top: -0.405em;
+    left: -2em;
+    opacity: .7;
+    transform: scale(.65);
+    transition: opacity .1s;
+}
+
+.navbar a {
+    margin: 2.4em 1.1em;
+    transition: .1s;
+}
+
+.spain {
+    color: #222;
+}
+
+.content-1-title {
+    font-size: 3.3em;
+    font-weight: 500;
+    width: 400px;
+    line-height: 1.11em;
+    position: relative;
+    font-family: 'Playfair Display';
+}
+
+.content-1-title::after {
+    content: '';
+    position: absolute;
+    right: 18px;
+    bottom: .39em;
+    width: 1.6em;
+    height: .064em;
+    background: #000;
+}
+
+.content-2-title {
+    font-weight: 500;
+    margin: 1.7em 0 2.1em 0;
+    font-family: 'Playfair Display';
+}
+
+.main-content {
+    margin: 60px 25px 110px 385px;
+}
+
+.main-images {
+    display: flex;
+}
+
+.image {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.image img:first-child {
+    width: 160px;
+}
+
+.image img:last-child {
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,.78);
+    padding: 7px;
+    border-radius: 50%;
+    transition: .1s;
+}
+
+.images a {
+    color: #444;
+    font-size: .75em;
+    font-weight: 600;
+    position: relative;
+}
+
+.images a::after {
+    content: url('images/arrow-forward.svg');
+    position: absolute;
+    top: -0.47em;
+    right: -2em;
+    transform: scale(.6);
+    opacity: .9;
+}
+
+.text {
+    width: 250px;
+    line-height: 1.7em;
+    margin: -3px 0 0 2.45em;
+}
